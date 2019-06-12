@@ -1,0 +1,32 @@
+{
+  "name": "omnistack-week-rocketseat-api-nodejs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon ./src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Gisiona/omnistack-week-rocketseat-api-nodejs.git"
+  },
+  "keywords": [
+    "OmniStack",
+    "Rocketseat",
+    "Api",
+    "NodeJS"
+  ],
+  "author": "Gisiona Costa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Gisiona/omnistack-week-rocketseat-api-nodejs/issues"
+  },
+  "homepage": "https://github.com/Gisiona/omnistack-week-rocketseat-api-nodejs#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.5.15",
+    "nodemon": "^1.19.1"
+  }
+}
