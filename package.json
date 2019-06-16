@@ -25,8 +25,14 @@
   "homepage": "https://github.com/Gisiona/omnistack-week-rocketseat-api-nodejs#readme",
   "dependencies": {
     "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
     "express": "^4.17.1",
+    "fs": "0.0.1-security",
     "mongoose": "^5.5.15",
-    "nodemon": "^1.19.1"
+    "multer": "^1.4.1",
+    "nodemon": "^1.19.1",
+    "path": "^0.12.7",
+    "sharp": "^0.22.1",
+    "socket.io": "^2.2.0"
   }
 }
