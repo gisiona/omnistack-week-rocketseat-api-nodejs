@@ -6,8 +6,8 @@ module.exports = {
             console.log(req.params.id)
              // pesquisando todos os registros e ordenando através da data de criacao
             const posts = await Post.findById(req.params.id);
-
-            if(posts){
+            console.log(posts);
+            if(posts == null){
                 return res.status(400).send({error: 'Post não encontrado.'});
             }
             // adicionando +1 like no post
@@ -17,7 +17,7 @@ module.exports = {
             posts.save();
             
             //adicionado o ultimo post adicionado na requisicao atraves do protoclo io e permitindo que todos os usuarios tenha acesso a esta informacao.
-            req.io.emit('like', post);
+            req.io.emit('like', posts);
 
             // retornando os dados do post atualizado com os likes.
             return res.status(201).send({posts, retorno:'Dados dos posts retornado com sucesso.'})
